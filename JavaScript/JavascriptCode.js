@@ -31,3 +31,39 @@ function findLargest(arr) {
 }
 
 console.log(findLargest([99, 5, 3, 100, 1]));
+
+//Using the spread operator (...) or Math.max:
+
+function findLargest(arr) {
+    // Math.max() is used to find the largest number
+    return Math.max(...arr); 
+}
+
+console.log(findLargest([99, 5, 3, 100, 1]));
+
+//How Remove the first element from an array in JavaScript
+
+// Initialize an array
+let arr = [5, 6, 7];
+arr = arr.slice(1); 
+// Create a new array without the first element
+console.log(arr);
+
+//Write a Program to use a callback function?
+
+function greet(name, callback) {
+    callback(`Hello, ${name}!`);
+}
+greet('Geek', message => console.log(message));
+
+//Write a Program to find a sum of an array
+
+function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+console.log(sumArray([15, 6, 10, 2]));
