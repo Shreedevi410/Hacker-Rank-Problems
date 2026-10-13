@@ -1,0 +1,6 @@
+const product = {
+    name : "ball pen",
+    rating: 4,
+    price : 270,
+    offer: 5 
+};
