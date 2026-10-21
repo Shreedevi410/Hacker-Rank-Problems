@@ -6,3 +6,9 @@ const product = {
 };
 
 console.log(product);
+
+const discountAmount = product.price * (product.offer / 100);
+const discountedPrice = product.price - discountAmount;
+
+console.log(`Discount: ${discountAmount}`);
+console.log(`Price after discount: ${discountedPrice}`);
