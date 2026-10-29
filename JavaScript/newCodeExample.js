@@ -6,3 +6,7 @@ const average = total / numbers.length;
 console.log('Numbers:', numbers);
 console.log('Total:', total);
 console.log('Average:', average);
+
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+
+console.log('Even numbers:', evenNumbers);
