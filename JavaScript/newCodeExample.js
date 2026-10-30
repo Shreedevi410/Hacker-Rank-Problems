@@ -10,3 +10,22 @@ console.log('Average:', average);
 const evenNumbers = numbers.filter((num) => num % 2 === 0);
 
 console.log('Even numbers:', evenNumbers);
+
+// Tricky JavaScript question: closure + var hoisting
+console.log('--- Tricky JavaScript Example ---');
+console.log(a);
+var a = 10;
+
+const funcs = [];
+for (var i = 0; i < 3; i++) {
+  funcs.push(() => console.log('with var:', i));
+}
+
+funcs.forEach((fn) => fn());
+
+const funcsWithLet = [];
+for (let j = 0; j < 3; j++) {
+  funcsWithLet.push(() => console.log('with let:', j));
+}
+
+funcsWithLet.forEach((fn) => fn());
